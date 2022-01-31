@@ -1,0 +1,28 @@
+env: Pendulum-v0
+seed: 5
+featExtractor: !!python/name:__main__.NothingToDo ''
+freqSave: 1000
+freqTest: 100
+nbTest: 5
+freqVerbose: 100
+freqOptim: 1000                                                                          # Optimisation de la politique tous les freqOptim evenements
+fromFile: null
+nbEpisodes: 1000000
+maxLengthTrain: 200
+maxLengthTest: 200
+
+discount: 0.95
+r_scale: 0.01
+explo: 0.1
+nblearn: 50
+batchSize: 1000
+rau: 0.99
+lr_actor: 0.001
+lr_critic: 0.01
+lr_temp: 0.001
+ada_temp: false
+start_steps: 1000
+H0: 0.2
+memory: 100000
+alpha: 0.1
+algo: SAC

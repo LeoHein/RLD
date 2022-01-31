@@ -1,0 +1,26 @@
+env: LunarLanderContinuous-v2
+seed: 5
+featExtractor: !!python/name:__main__.NothingToDo ''
+freqSave: 1000
+freqTest: 100
+nbTest: 5
+freqVerbose: 100
+freqOptim: 1000                                                                        # Optimisation de la politique tous les freqOptim evenements
+fromFile: null
+nbEpisodes: 1000000
+maxLengthTrain: 300
+maxLengthTest: 300
+
+discount: 0.95
+nblearn: 50
+batchSize: 1000
+rau: 0.9
+lr_actor: 0.0001
+lr_critic: 0.0001
+lr_temp: 0.0001
+ada_temp: false
+start_steps: 1000
+H0: 0.2
+memory: 100000
+alpha: 0.12
+algo: SAC
